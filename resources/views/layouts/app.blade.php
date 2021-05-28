@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+        <title> {{ $header }} - {{ config('app.name', 'Laravel') }}</title>
 
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
@@ -36,7 +36,7 @@
             
 
             <!-- Page Content -->
-            <div class="py-12">
+            <div class="py-6">
                 <div class="max-w-7x1 mx-auto sm:px-6 lg:px-8">
                     {{ $slot}}
 
