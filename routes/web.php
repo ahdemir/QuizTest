@@ -22,7 +22,5 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/panel', function () {
 })->name('dashboard');
 
 Route::group(['middleware' => ['auth','isAdmin'],'prefix'=>'admin'],function(){
-    
-    });
 
 });
