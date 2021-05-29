@@ -22,7 +22,8 @@ class QuizFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'title'=>$this->faker->sentence(rand(3,7)),
+            'description'=>$this->faker->text(200)
         ];
     }
 }
